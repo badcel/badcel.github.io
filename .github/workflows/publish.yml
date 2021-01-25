@@ -29,3 +29,14 @@ jobs:
       - name: Run release build
         run: dotnet run -- --release --xml-documentation --targets docs
         working-directory: './src/Build'
+        
+      - name: Move docs into output dir
+        run: cp -r ./src/Docs/Api ./output/docs
+        
+      - name: Publish website
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: master
+          publish_dir: ./output
+          cname: gircore.tiede.org
