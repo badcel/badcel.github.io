@@ -31,7 +31,9 @@ jobs:
         working-directory: './src/Build'
         
       - name: Move docs into output dir
-        run: cp -r ./src/Docs/Api ./output/docs
+        run: |
+          mkdir ./output/docs
+          cp -r ./src/Docs/Api ./output/docs
         
       - name: Publish website
         uses: peaceiris/actions-gh-pages@v3
