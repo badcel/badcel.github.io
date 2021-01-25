@@ -36,15 +36,13 @@ jobs:
         working-directory: './src/Build'
         
       - name: Move docs into output dir
-        run: |
-          mkdir api
-          cp -r ../src/Docs/Api api
-        working-directory: './output'
+        run: cp -r ./src/Docs/Api ./output/api
         
       - name: Publish website
         uses: peaceiris/actions-gh-pages@v3
         with:
-          deploy_key: ${{ secrets.GITHUB_TOKEN }}
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_branch: main
           publish_dir: ./output
+          enable_jekyll: true
           #cname: gircore.tiede.org
