@@ -13,7 +13,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout with submodules
+      - name: Checkout homepage
+        uses: actions/checkout@v2
+        with:
+          path: 'output'
+
+      - name: Checkout with source code
         uses: actions/checkout@v2
         with:
           repository: 'gircore/gir.core'
@@ -32,11 +37,9 @@ jobs:
         
       - name: Move docs into output dir
         run: |
-          mkdir docs
-          ls -la
-          ls -la ../src/Docs/Api/
-          cp -r ../src/Docs/Api docs
-        working-directory: ./output
+          mkdir api
+          cp -r ../src/Docs/Api api
+        working-directory: './output'
         
       - name: Publish website
         uses: peaceiris/actions-gh-pages@v3
