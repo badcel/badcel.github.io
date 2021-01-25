@@ -42,4 +42,4 @@ jobs:
           deploy_key: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: main
           publish_dir: ./output
-          cname: gircore.tiede.org
+          #cname: gircore.tiede.org
