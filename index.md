@@ -1,37 +1,13 @@
-## Welcome to GitHub Pages		
+# Welcome to Gir.Core
 
-  You can use the [editor on GitHub](https://github.com/badcel/badcel.github.io/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.		
+Gir.Core is a project which aims to provide C# wrapper for different [GObject] based libraries like [GTK] for user interfaces.
 
-  Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.		
+The foucs is to provide a C# friendly API and a corresponding online documentation.
 
-  ### Markdown		
+Whats up next?
+* If you want to get more details before starting to program see: [Supported Libraries](/libraries.md)
+* If you want to get startet see: Please refer to the [developer documentation](https://github.com/gircore/gir.core#build--use) as long as there are no nuget packages available
+* If you want to contribute to the project see the [github project](https://github.com/gircore/gir.core)
 
-  Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for		
-
-  ```markdown		
- Syntax highlighted code block		
-
-  # Header 1		
- ## Header 2		
- ### Header 3		
-
-  - Bulleted		
- - List		
-
-  1. Numbered		
- 2. List		
-
-  **Bold** and _Italic_ and `Code` text		
-
-  [Link](url) and ![Image](src)		
- ```		
-
-  For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).		
-
-  ### Jekyll Themes		
-
-  Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/badcel/badcel.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.		
-
-  ### Support or Contact		
-
-  Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+[GObject]: https://developer.gnome.org/gobject/stable/
+[GTK]: https://gtk.org/
