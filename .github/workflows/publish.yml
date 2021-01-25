@@ -33,6 +33,8 @@ jobs:
       - name: Move docs into output dir
         run: |
           mkdir docs
+          ls -la
+          ls -la ../src/Docs/Api/
           cp -r ../src/Docs/Api docs
         working-directory: ./output
         
